@@ -1,10 +1,16 @@
-package com.xeant.viewpagerexam.dummy;
+package com.xeant.viewpagerexam;
 
 public class PageItem {
     private Integer bgColor;
     private Integer imageSrc;
-    private Integer content;
-    
+    private String content;
+
+    public PageItem(Integer bgColor, Integer imageSrc, String content) {
+        this.bgColor = bgColor;
+        this.imageSrc = imageSrc;
+        this.content = content;
+    }
+
     @Override
     public String toString() {
         return "PageItem{" +
@@ -30,11 +36,11 @@ public class PageItem {
         this.imageSrc = imageSrc;
     }
 
-    public Integer getContent() {
+    public String getContent() {
         return content;
     }
 
-    public void setContent(Integer content) {
+    public void setContent(String content) {
         this.content = content;
     }
 }
