@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "760635716496",
+    "project_id": "android-ant",
+    "storage_bucket": "android-ant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760635716496:android:005dabc82b465583a8f915",
+        "android_client_info": {
+          "package_name": "com.xeant.pushtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760635716496-ingog5htf1k118lq6sfujibohvmi23j1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHRtROMn7hQnUWNMybjX16Fyc0FB61kx0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760635716496-ingog5htf1k118lq6sfujibohvmi23j1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
