@@ -10,6 +10,8 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
 
+import static android.provider.MediaStore.*;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -23,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
         // 사진 데이터
         Cursor cursor = getContentResolver().query
-                (MediaStore.Images.Media.EXTERNAL_CONTENT_URI,    // From
+                (Images.Media.EXTERNAL_CONTENT_URI,    // From
                         null,   // Select 절
                         null,   // Where 절
                         null,   // Where 절
-                        MediaStore.Images.ImageColumns.DATE_TAKEN + " DESC");// Order By
+                        Images.ImageColumns.DATE_TAKEN + " DESC");// Order By
 
         // 어댑터
         MyCursorAdapter adapter = new MyCursorAdapter(this, cursor);
@@ -40,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 // 클릭한 부분의 cursor 데이타
                 Cursor cursor = (Cursor) parent.getAdapter().getItem(position);
                 String path = cursor.getString
-                        (cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA));
+                        (cursor.getColumnIndexOrThrow(Images.Media.DATA));
 
                 Toast.makeText(MainActivity.this, "사진 경로 : " + path,
                         Toast.LENGTH_SHORT).show();
