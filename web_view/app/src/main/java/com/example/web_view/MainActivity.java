@@ -18,6 +18,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.net.URLEncoder;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -81,6 +83,13 @@ public class MainActivity extends AppCompatActivity {
         }
         myWebView.loadUrl(address);
 
+//        WebView webview = new WebView(this);
+//        setContentView(webview);
+//        String url = "http://www.example.com";
+//        String postData = "username=" + URLEncoder.encode(my_username, "UTF-8") + "&password=" + URLEncoder.encode(my_password, "UTF-8");
+//        webview.postUrl(url,postData.getBytes());
+
+//````````````````````````````````````````
     }
 
     @Override

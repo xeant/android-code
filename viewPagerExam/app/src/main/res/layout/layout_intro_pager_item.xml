@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:background="@color/colorBlue"
     android:id="@+id/pager_item_bg">
 
     <ImageView
@@ -22,6 +23,4 @@
         android:textSize="30sp"
         android:textAlignment="center"
         />
-
-
 </LinearLayout>

@@ -17,6 +17,8 @@ public class MyIntroPagerViewHolder extends RecyclerView.ViewHolder implements V
     private ImageView itemImage;
     private LinearLayout itemBg;
     private TextView itemContent;
+    private static String TAG = "XEANT";
+//    pager_item_bg
 
     public MyIntroPagerViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -27,21 +29,20 @@ public class MyIntroPagerViewHolder extends RecyclerView.ViewHolder implements V
         itemView.setOnClickListener(this);
     }
     public void bindWithView(PageItem pageItem){
+        Log.d(TAG, pageItem.getBgColor().toString());
+        Log.d(TAG, "변경 발생!");
         itemImage.setImageResource(pageItem.getImageSrc());
         itemContent.setText(pageItem.getContent());
         itemBg.setBackgroundColor(pageItem.getBgColor());
-
 
         if(pageItem.getBgColor() != R.color.colorWhite){
             itemContent.setTextColor(Color.WHITE);
         }
     }
 
-
     @Override
     public void onClick(View v) {
        Log.d("XEANT " , "Click This ITEM" + v.toString());
-
     }
 }
 
